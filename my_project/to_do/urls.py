@@ -7,7 +7,7 @@ from .views import *
 # ]
 
 urlpatterns = [
-    path("", TodoList.as_view()),
+    # path("", TodoList.as_view()),
     path("<int:pk>/", TodoDetail.as_view()),
     path("create", TodoCreate.as_view()),
     path("delete/<int:pk>", TodoDelete.as_view()),
